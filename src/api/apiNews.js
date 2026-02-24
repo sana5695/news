@@ -6,8 +6,8 @@ const API_KEY = import.meta.env.VITE_API_KEY
 export const getNews = async () => {
     try {
         const response = await axios.get(BASE_URL, {
-            params: {
-                apiKey: API_KEY,
+                headers: {
+        'x-api-key': API_KEY
             }
         })
         return response.data
