@@ -2,8 +2,6 @@ import styles from "./styles.module.css";
 import {formatTimeAgo} from "../../helpers/formateTimeAgo.js";
 
 const NewsItem = ({item}) => {
-    console.log(1);
-    console.log(item);
     return (
         <li className={styles.item}>
             <div className={styles.wrapper}   style={{ backgroundImage: `url(${item.urlToImage})`}} ></div>
